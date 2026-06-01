@@ -1,0 +1,15 @@
+build/
+sdkconfig
+sdkconfig.old
+.claude/
+.vscode/
+
+# PlatformIO build artifacts
+.pio/
+.pioenvs/
+
+# Example runtime secrets — every example expects you to copy its
+# config.template.h to main/config.h and fill in real credentials.
+# The runtime copy must never be committed.
+examples/*/main/config.h
+docs/html/

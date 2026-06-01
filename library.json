@@ -1,0 +1,79 @@
+{
+  "name": "cryptnox-sdk-esp32",
+  "version": "1.0.0",
+  "description": "ESP32 SDK for managing Cryptnox Hardware Wallet smart cards over NFC. Provides secure channel establishment, card-info retrieval, PIN verification, and transaction signing.",
+  "keywords": [
+    "cryptnox",
+    "nfc",
+    "hardware wallet",
+    "blockchain",
+    "signing",
+    "esp32",
+    "pn532",
+    "secp256k1",
+    "ecdh"
+  ],
+  "authors": [
+    {
+      "name": "Cryptnox",
+      "email": "dev@cryptnox.com",
+      "url": "https://cryptnox.com",
+      "maintainer": true
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cryptnox/cryptnox-sdk-esp32"
+  },
+  "homepage": "https://github.com/cryptnox/cryptnox-sdk-esp32",
+  "license": "LGPL-3.0-or-later",
+  "frameworks": [
+    "espidf"
+  ],
+  "platforms": [
+    "espressif32"
+  ],
+  "headers": "CryptnoxWallet.h",
+  "build": {
+    "srcFilter": [
+      "+<components/cryptnox_utils/*.cpp>",
+      "+<components/crypto_provider/*.cpp>",
+      "+<components/esp32_logger/*.cpp>",
+      "+<components/esp32_platform/*.cpp>",
+      "+<components/pn532/*.c>",
+      "+<components/pn532_adapter/*.cpp>",
+      "+<components/pn532_nfc_transport/*.cpp>",
+      "+<components/uECC/*.cpp>",
+      "+<cryptnox-sdk-cpp/*.cpp>"
+    ],
+    "flags": [
+      "-Icomponents/crypto_provider/include",
+      "-Icomponents/esp32_logger/include",
+      "-Icomponents/esp32_platform/include",
+      "-Icomponents/pn532/include",
+      "-Icomponents/pn532_adapter/include",
+      "-Icomponents/pn532_nfc_transport/include",
+      "-Icomponents/uECC/include",
+      "-Icryptnox-sdk-cpp"
+    ]
+  },
+  "export": {
+    "exclude": [
+      ".github",
+      "main",
+      "hardware",
+      "test",
+      "fuzz",
+      "build",
+      "docs/html",
+      "docs/architecture",
+      "sdkconfig",
+      "cryptnox-sdk-cpp/fuzz",
+      "cryptnox-sdk-cpp/docs",
+      "examples/*/build",
+      "examples/*/.pio",
+      "examples/*/sdkconfig",
+      "examples/*/main/config.h"
+    ]
+  }
+}
