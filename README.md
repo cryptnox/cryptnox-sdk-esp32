@@ -6,6 +6,8 @@
 
 ESP32 SDK for managing Cryptnox smart card wallets
 
+📄 [Download this documentation as PDF](https://docs.cryptnox.com/cryptnox-sdk-esp32/cryptnox-sdk-esp32.pdf)
+
 </div>
 
 <br/>
@@ -83,7 +85,7 @@ Wiring shown for the **ESP32-S3-DevKitC-1**.
 > - **Switch 0** → HIGH
 > - **Switch 1** → LOW
 
-<img width="800" alt="esp32_s3_pn532_spi" src="hardware/schematics/esp32_s3_pn532_spi_bb.png" />
+<img width="800" alt="esp32_s3_pn532_spi" src="https://raw.githubusercontent.com/cryptnox/cryptnox-sdk-esp32/main/hardware/schematics/esp32_s3_pn532_spi_bb.png" />
 
 
 ### ESP32-S3 and PN532 NFC — I²C interface
@@ -103,7 +105,7 @@ Wiring shown for the **ESP32-S3-DevKitC-1**.
 > - **Switch 0** → LOW
 > - **Switch 1** → HIGH
 
-<img width="800" alt="esp32_s3_pn532_i2c" src="hardware/schematics/esp32_s3_pn532_i2c_bb.png" />
+<img width="800" alt="esp32_s3_pn532_i2c" src="https://raw.githubusercontent.com/cryptnox/cryptnox-sdk-esp32/main/hardware/schematics/esp32_s3_pn532_i2c_bb.png" />
 
 ---
 
