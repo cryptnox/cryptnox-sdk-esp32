@@ -27,7 +27,7 @@ and the resulting `(r, s)`.
 | Component | Details |
 |-----------|---------|
 | **Hardware Wallet** | Cryptnox Hardware Wallet, initialised **and** seeded |
-| **NFC reader** | PN532 over SPI — MOSI=11, MISO=13, SCLK=12, CS=10 (see [hardware setup](../../README.md#hardware-setup)) |
+| **NFC reader** | PN532 over SPI — MOSI=11, MISO=13, SCLK=12, CS=10 (see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup)) |
 | **Board** | ESP32-S3-DevKitC-1 |
 | **Toolchain** | ESP-IDF v5.5 |
 

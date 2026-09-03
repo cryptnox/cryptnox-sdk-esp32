@@ -27,7 +27,7 @@ wrong PIN so it cannot exhaust the on-card retry counter.
 | Component | Details |
 |-----------|---------|
 | **Hardware Wallet** | Cryptnox Hardware Wallet, initialised with a known PIN |
-| **NFC reader** | PN532 over SPI — MOSI=11, MISO=13, SCLK=12, CS=10 (see [hardware setup](../../README.md#hardware-setup)) |
+| **NFC reader** | PN532 over SPI — MOSI=11, MISO=13, SCLK=12, CS=10 (see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup)) |
 | **Board** | ESP32-S3-DevKitC-1 |
 | **Toolchain** | ESP-IDF v5.5 |
 
@@ -139,7 +139,7 @@ material is unrecoverable.
 
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| `PN532 init failed` | Reader wiring / SPI mode switches | See [hardware setup](../../README.md#hardware-setup) |
+| `PN532 init failed` | Reader wiring / SPI mode switches | See [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup) |
 | Wi-Fi never connects | Wrong SSID / password, or 5 GHz-only network | ESP32-S3 is 2.4 GHz only — verify `WIFI_SSID` / `WIFI_PASSWORD` in `main/config.h` |
 | `Card not detected` | Card not on the antenna | Bring the card within ~1 cm of the antenna |
 | `bad SW 0x63CN` | Wrong PIN, N retries remaining | Fix `DEMO_PIN`, re-flash |

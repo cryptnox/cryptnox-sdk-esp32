@@ -20,7 +20,7 @@ cannot lock the card.
 | Component | Details |
 |-----------|---------|
 | **Hardware Wallet** | Cryptnox Hardware Wallet, initialised (`cryptnox init`) |
-| **NFC reader** | PN532 over SPI — MOSI=11, MISO=13, SCLK=12, CS=10 (see [hardware setup](../../README.md#hardware-setup)) |
+| **NFC reader** | PN532 over SPI — MOSI=11, MISO=13, SCLK=12, CS=10 (see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup)) |
 | **Board** | ESP32-S3-DevKitC-1 |
 | **Toolchain** | ESP-IDF v5.5 |
 | **Repository** | Cloned with submodules (`git clone --recurse-submodules …`) |
@@ -118,7 +118,7 @@ while (true) {
 
 | Symptom | Cause | Fix |
 |---------|-------|-----|
-| `PN532 init failed` | Reader wiring / power / mode switches | Check VCC = 3.3 V, the MOSI/MISO/SCLK/CS pinout and the PN532 SPI mode switches (`SW0=HIGH, SW1=LOW`) — see [hardware setup](../../README.md#hardware-setup) |
+| `PN532 init failed` | Reader wiring / power / mode switches | Check VCC = 3.3 V, the MOSI/MISO/SCLK/CS pinout and the PN532 SPI mode switches (`SW0=HIGH, SW1=LOW`) — see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup) |
 | Wi-Fi never connects | Wrong SSID / password, or 5 GHz-only network | ESP32-S3 supports 2.4 GHz only — verify SSID, password, band in `main/config.h` |
 | `Card not detected or secure channel failed` | Card off the antenna, or card not initialised | Bring the card within ~1 cm of the antenna; run `cryptnox init` if it is a brand-new card |
 | `getCardInfo failed (channel error or parse error)` | Card initialised without an owner name/email | Re-run `cryptnox init` and fill in the owner fields |

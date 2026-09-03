@@ -34,7 +34,7 @@ and the resulting `(r, s)`.
 |-----------|---------|
 | **Hardware Wallet** | Cryptnox Hardware Wallet, initialised **and** seeded |
 | **Wallet funding** | The address derived from `m/44'/60'/0'/0/0` on the card needs Sepolia ETH (for gas) and Sepolia USDC. Faucets: [Sepolia ETH](https://sepoliafaucet.com/) · [Circle USDC](https://faucet.circle.com/) |
-| **NFC reader** | PN532 over **SPI** or **I²C** — selected by `SPI_ENABLED` / `I2C_ENABLED` at the top of `main.cpp`; see [hardware setup](../../README.md#hardware-setup) |
+| **NFC reader** | PN532 over **SPI** or **I²C** — selected by `SPI_ENABLED` / `I2C_ENABLED` at the top of `main.cpp`; see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup) |
 | **Board** | ESP32-S3-DevKitC-1 (or any ESP32 family — Wi-Fi required) |
 | **Toolchain** | ESP-IDF v5.5 |
 | **RPC endpoint** | A Sepolia JSON-RPC endpoint — [PublicNode](https://ethereum-sepolia-rpc.publicnode.com) (no signup, default) or [Infura](https://app.infura.io/) |
@@ -150,7 +150,7 @@ will match when the card's key and `ADDR_FROM` are consistent.
 ## Configuration reference
 
 All fields live in `main/config.h` (gitignored). Start from
-[`config.template.h`](config.template.h) and fill in:
+[`config.template.h`](https://github.com/cryptnox/cryptnox-sdk-esp32/blob/main/examples/UsdcSigning/config.template.h) and fill in:
 
 ### Wi-Fi
 

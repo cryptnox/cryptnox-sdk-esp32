@@ -29,7 +29,7 @@ If you only need **one** of the steps, see the focused examples:
 | Component | Details |
 |-----------|---------|
 | **Hardware Wallet** | Cryptnox Hardware Wallet, initialised **and** seeded |
-| **NFC reader** | PN532 wired on **SPI** (default) or **I²C** — see [hardware setup](../../README.md#hardware-setup) |
+| **NFC reader** | PN532 wired on **SPI** (default) or **I²C** — see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup) |
 | **Board** | ESP32-S3-DevKitC-1 |
 | **Toolchain** | ESP-IDF v5.5 |
 
@@ -187,7 +187,7 @@ This example is a demo. Before shipping firmware to end-users:
 | Symptom | Cause | Fix |
 |---------|-------|-----|
 | `Please enable exactly one of SPI_ENABLED / I2C_ENABLED` (build error) | Both macros are 0 or both are 1 | Set exactly one to 1 |
-| `PN532 init failed` | Reader wiring / bus mode switches | Check VCC = 3.3 V, the switches and the configured pins — see [hardware setup](../../README.md#hardware-setup) |
+| `PN532 init failed` | Reader wiring / bus mode switches | Check VCC = 3.3 V, the switches and the configured pins — see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup) |
 | Wi-Fi never connects | Wrong SSID / password, or 5 GHz-only network | ESP32-S3 is 2.4 GHz only — verify `main/config.h` |
 | `Sign failed, errorCode: 0x81` | No seed on the card | `cryptnox seed generate` |
 | `Sign failed, errorCode: 0x82` | Wrong PIN | Edit `DEFAULT_PIN`, re-flash — see [VerifyPin](../VerifyPin/README.md) |

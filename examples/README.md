@@ -19,7 +19,7 @@ reader landing on a single example gets everything needed end-to-end.
 | Component | Details |
 |-----------|---------|
 | **Hardware Wallet** | Cryptnox Hardware Wallet (firmware ≥ v1.6.0), initialised with a PIN — and a seed loaded for the signing examples |
-| **NFC reader** | [PN532 NFC module](https://www.nxp.com/products/PN532) wired over **SPI** (default) or **I²C** — see [hardware setup](../README.md#hardware-setup) |
+| **NFC reader** | [PN532 NFC module](https://www.nxp.com/products/PN532) wired over **SPI** (default) or **I²C** — see [hardware setup](https://github.com/cryptnox/cryptnox-sdk-esp32#hardware-setup) |
 | **Board** | [ESP32-S3-DevKitC-1](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/hw-reference/esp32s3/user-guide-devkitc-1.html) (Espressif reference dev kit) |
 | **Toolchain** | [ESP-IDF v5.5](https://docs.espressif.com/projects/esp-idf/en/v5.5/esp32s3/get-started/index.html) installed and sourced (`. $IDF_PATH/export.sh`) |
 | **Repository** | This repository **cloned with submodules** (`git clone --recurse-submodules …`) |
