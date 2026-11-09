@@ -18,5 +18,6 @@ var searchData=
   ['mock_5fuart_5fbaud_5frate_15',['MOCK_UART_BAUD_RATE',['../test__cw__secure__channel_8cpp.html#a67816a916a201c866de4d8a790861841',1,'test_cw_secure_channel.cpp']]],
   ['mocklogger_16',['MockLogger',['../classMockLogger.html',1,'']]],
   ['mockplatform_17',['MockPlatform',['../classMockPlatform.html',1,'']]],
-  ['mockscriptentry_18',['MockScriptEntry',['../structMockScriptEntry.html',1,'']]]
+  ['mockscriptentry_18',['MockScriptEntry',['../structMockScriptEntry.html',1,'']]],
+  ['model_19',['Threat model',['../index.html#autotoc_md82',1,'']]]
 ];

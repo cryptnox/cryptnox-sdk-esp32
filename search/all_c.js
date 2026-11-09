@@ -12,7 +12,8 @@ var searchData=
   ['info_9',['Connect — Secure Channel + Card Info',['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md11',1,'']]],
   ['inlistpassivetarget_10',['inListPassiveTarget',['../classPN532Adapter.html#ac28bae87cad3c9c0d150d2cb4c04259b',1,'PN532Adapter::inListPassiveTarget()'],['../classPn532NfcTransport.html#a4bfab871b695ac0e1ae51af24d5d0b50',1,'Pn532NfcTransport::inListPassiveTarget()'],['../classScriptedMockNfcTransport.html#a26d84b7b3607e61f74f4a91007a5dac5',1,'ScriptedMockNfcTransport::inListPassiveTarget()'],['../classReflectiveMockNfcTransport.html#a43719315454de263891fcaa1472a0ad2',1,'ReflectiveMockNfcTransport::inListPassiveTarget()']]],
   ['installation_11',['Installation',['../index.html#autotoc_md71',1,'']]],
-  ['interface_12',['interface',['../index.html#autotoc_md74',1,'ESP32-S3 and PN532 NFC — I²C interface'],['../index.html#autotoc_md73',1,'ESP32-S3 and PN532 NFC — SPI interface']]],
-  ['it_20works_13',['it works',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md5',1,'How it works'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md15',1,'How it works'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md31',1,'How it works'],['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md43',1,'How it works'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md59',1,'How it works']]],
-  ['items_5fbuf_5fmax_14',['ITEMS_BUF_MAX',['../eth__rlp_8cpp.html#a72d92e7bcb253dbfb58f6553929f2466',1,'eth_rlp.cpp']]]
+  ['integration_20guidance_12',['Integration guidance',['../index.html#autotoc_md83',1,'']]],
+  ['interface_13',['interface',['../index.html#autotoc_md74',1,'ESP32-S3 and PN532 NFC — I²C interface'],['../index.html#autotoc_md73',1,'ESP32-S3 and PN532 NFC — SPI interface']]],
+  ['it_20works_14',['it works',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md5',1,'How it works'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md15',1,'How it works'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md31',1,'How it works'],['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md43',1,'How it works'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md59',1,'How it works']]],
+  ['items_5fbuf_5fmax_15',['ITEMS_BUF_MAX',['../eth__rlp_8cpp.html#a72d92e7bcb253dbfb58f6553929f2466',1,'eth_rlp.cpp']]]
 ];

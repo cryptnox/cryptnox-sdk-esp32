@@ -16,9 +16,13 @@ var topics =
       [ "2. Verify the PIN code", "index.html#autotoc_md78", null ],
       [ "3. Sign a transaction hash", "index.html#autotoc_md79", null ]
     ] ],
-    [ "Security", "index.html#autotoc_md81", null ],
-    [ "Documentation", "index.html#autotoc_md83", null ],
-    [ "License", "index.html#autotoc_md84", null ],
+    [ "Security", "index.html#autotoc_md81", [
+      [ "Threat model", "index.html#autotoc_md82", null ],
+      [ "Integration guidance", "index.html#autotoc_md83", null ],
+      [ "Reporting a vulnerability", "index.html#autotoc_md84", null ]
+    ] ],
+    [ "Documentation", "index.html#autotoc_md86", null ],
+    [ "License", "index.html#autotoc_md87", null ],
     [ "PN532 NFC driver", "group__pn532__driver.html", "group__pn532__driver" ],
     [ "ESP32 concrete adapters", "group__esp32__adapters.html", "group__esp32__adapters" ]
 ];

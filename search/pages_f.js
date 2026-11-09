@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['on_20a_2032_20byte_20hash_0',['Sign — ECDSA secp256k1 on a 32-Byte Hash',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md27',1,'']]],
-  ['on_20sepolia_1',['UsdcSigning — Broadcast a Real EIP-1559 USDC Transfer on Sepolia',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md39',1,'']]],
-  ['one_20provider_2',['RPC endpoint — choose one provider',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md48',1,'']]],
-  ['or_20i²c_3',['BasicUsage — End-to-End Walkthrough (SPI or I²C)',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md1',1,'']]],
-  ['output_4',['output',['../dir_01d5546719d1d9aa3f28dd8395968769.html#autotoc_md4',1,'Expected output'],['../dir_61c733bd969c2471ac02d97f3b0ee95b.html#autotoc_md14',1,'Expected output'],['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md30',1,'Expected output'],['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md42',1,'Expected output'],['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md58',1,'Expected output']]],
-  ['over_20the_20secure_20channel_5',['VerifyPin — PIN Verification Over the Secure Channel',['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md55',1,'']]]
+  ['new_20example_0',['Adding a new example',['../dir_d28a4824dc47e487b107a5db32ef43c4.html#autotoc_md24',1,'']]],
+  ['nfc_20—_20i²c_20interface_1',['ESP32-S3 and PN532 NFC — I²C interface',['../index.html#autotoc_md74',1,'']]],
+  ['nfc_20—_20spi_20interface_2',['ESP32-S3 and PN532 NFC — SPI interface',['../index.html#autotoc_md73',1,'']]],
+  ['nfc_20readers_3',['NFC readers',['../index.html#autotoc_md68',1,'']]]
 ];

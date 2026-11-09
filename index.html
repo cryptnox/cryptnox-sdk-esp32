@@ -322,16 +322,38 @@ Quick usage examples</h2>
 <hr  />
 <h2 class="doxsection"><a class="anchor" id="autotoc_md81"></a>
 Security</h2>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md82"></a>
+Threat model</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Actor  </th><th class="markdownTableHeadNone">Access  </th><th class="markdownTableHeadNone">Trust  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Host application  </td><td class="markdownTableBodyNone">Full memory access to ESP32  </td><td class="markdownTableBodyNone">Trusted  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">NFC eavesdropper  </td><td class="markdownTableBodyNone">Passive capture of the RF field  </td><td class="markdownTableBodyNone">Untrusted  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Malicious card  </td><td class="markdownTableBodyNone">Active NFC field (crafted APDUs)  </td><td class="markdownTableBodyNone">Untrusted  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Physical attacker  </td><td class="markdownTableBodyNone">USB cable, JTAG (if not burned)  </td><td class="markdownTableBodyNone">Untrusted  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Supply-chain attacker  </td><td class="markdownTableBodyNone">Tampered firmware image  </td><td class="markdownTableBodyNone">Untrusted  </td></tr>
+</table>
+<p>The SDK defends against the NFC eavesdropper and malicious card via the Cryptnox secure channel (ECDH key agreement + AES-CBC-MAC). Physical and supply-chain attackers are mitigated by enabling Flash Encryption and Secure Boot V2.</p>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md83"></a>
+Integration guidance</h3>
 <ul>
 <li><b>Flash Encryption and Secure Boot V2</b> must be enabled for production deployments. Defaults are set in <span class="tt">sdkconfig.defaults</span>. eFuse programming is irreversible — practice on a development board first.</li>
 <li><b>Hard-coded secrets:</b> Never hard-code a PIN or private key in firmware. Wipe PIN buffers with <span class="tt">CW_Utils::secure_wipe()</span> immediately after use.</li>
 <li><b>Dependency pinning:</b> Use the exact ESP-IDF tag (<span class="tt">v5.5.0</span>) and pin the <span class="tt">cryptnox-sdk-cpp</span> submodule to a commit hash.</li>
 </ul>
+<h3 class="doxsection"><a class="anchor" id="autotoc_md84"></a>
+Reporting a vulnerability</h3>
+<p>Follow the <a href="https://github.com/cryptnox/.github/blob/main/SECURITY.md">Cryptnox security policy</a>. Do not open a public issue.</p>
 <hr  />
-<h2 class="doxsection"><a class="anchor" id="autotoc_md83"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md86"></a>
 Documentation</h2>
 <p>The generated documentation for this project is available <a href="https://cryptnox.github.io/cryptnox-sdk-esp32/">here</a>.</p>
-<h2 class="doxsection"><a class="anchor" id="autotoc_md84"></a>
+<h2 class="doxsection"><a class="anchor" id="autotoc_md87"></a>
 License</h2>
 <p><span class="tt">cryptnox-sdk-esp32</span> is dual-licensed:</p>
 <ul>

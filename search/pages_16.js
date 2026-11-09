@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['verification_20over_20the_20secure_20channel_0',['VerifyPin — PIN Verification Over the Secure Channel',['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md55',1,'']]],
-  ['verified_1',['PIN: in payload vs pre-verified',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md33',1,'']]],
-  ['verify_20the_20pin_20code_2',['2. Verify the PIN code',['../index.html#autotoc_md78',1,'']]],
-  ['verifypin_20—_20pin_20verification_20over_20the_20secure_20channel_3',['VerifyPin — PIN Verification Over the Secure Channel',['../dir_cc81cf6f1c823b08adf4153a5960c30a.html#autotoc_md55',1,'']]],
-  ['vs_20pre_20verified_4',['PIN: in payload vs pre-verified',['../dir_2365b4822c04e78cb5bc3fb96cb35526.html#autotoc_md33',1,'']]]
+  ['usage_20examples_0',['Quick usage examples',['../index.html#autotoc_md76',1,'']]],
+  ['usdc_20transfer_20on_20sepolia_1',['UsdcSigning — Broadcast a Real EIP-1559 USDC Transfer on Sepolia',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md39',1,'']]],
+  ['usdcsigning_20—_20broadcast_20a_20real_20eip_201559_20usdc_20transfer_20on_20sepolia_2',['UsdcSigning — Broadcast a Real EIP-1559 USDC Transfer on Sepolia',['../dir_5b19b165ccbe70e79cec239ffc7400ef.html#autotoc_md39',1,'']]]
 ];

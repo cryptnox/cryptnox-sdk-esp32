@@ -56,7 +56,7 @@ var NAVTREEINDEX =
 [
 "BasicUsage_2config_8template_8h.html",
 "classScriptedMockNfcTransport.html#a0bf9be9356ed43d3d47da4468e02ce7f",
-"pn532_8c.html#a87f87ce8c465f27011258c3be90d5fd9"
+"pn532_8c.html#a83931e5931b5183a9dedec9916faf668"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
