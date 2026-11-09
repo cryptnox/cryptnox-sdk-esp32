@@ -244,9 +244,27 @@ See `examples/UsdcSigning/` for a full reference that wires up the SPI bus and p
 
 ## Security
 
+### Threat model
+
+| Actor | Access | Trust |
+|-------|--------|-------|
+| Host application | Full memory access to ESP32 | Trusted |
+| NFC eavesdropper | Passive capture of the RF field | Untrusted |
+| Malicious card | Active NFC field (crafted APDUs) | Untrusted |
+| Physical attacker | USB cable, JTAG (if not burned) | Untrusted |
+| Supply-chain attacker | Tampered firmware image | Untrusted |
+
+The SDK defends against the NFC eavesdropper and malicious card via the Cryptnox secure channel (ECDH key agreement + AES-CBC-MAC). Physical and supply-chain attackers are mitigated by enabling Flash Encryption and Secure Boot V2.
+
+### Integration guidance
+
 - **Flash Encryption and Secure Boot V2** must be enabled for production deployments. Defaults are set in `sdkconfig.defaults`. eFuse programming is irreversible — practice on a development board first.
 - **Hard-coded secrets:** Never hard-code a PIN or private key in firmware. Wipe PIN buffers with `CW_Utils::secure_wipe()` immediately after use.
 - **Dependency pinning:** Use the exact ESP-IDF tag (`v5.5.0`) and pin the `cryptnox-sdk-cpp` submodule to a commit hash.
+
+### Reporting a vulnerability
+
+Follow the [Cryptnox security policy](https://github.com/cryptnox/.github/blob/main/SECURITY.md). Do not open a public issue.
 
 ---
 
